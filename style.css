@@ -1,0 +1,167 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------- */
+/* --- Header --- */
+
+header::before {
+    content: "Code DNA";
+    font-weight: bold;
+    background-color: #ccc;
+    color: #f9f9f9;
+    padding: 3px 5px;
+    border-radius: 7px;
+}
+
+header h1 {
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 2.2rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* ---------------------------------- */
+/* --- Main --- */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.5em;
+    width: 25%;
+    border-radius: 10px;
+}
+
+/* ---------------------------------- */
+/* --- Cortex core --- */
+
+[data-skill*="90%+"] {
+    background-color: rgb(136, 219, 136);
+}
+
+/* ---------------------------------- */
+/* --- Experiments --- */
+
+.experiments h2 + ul > li:nth-child(odd)::after {
+    content: " _New area";
+    font-size: 0.4em;
+    color: #fc0505;
+}
+
+.experiments h2 + ul > li:nth-child(odd):hover{
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.experiments > h2 {
+    background-color: #ffffff;
+}
+
+.experiments > h2:hover {
+    transition: 1s;
+    background-color: #ccc;
+    padding: 0 10px;
+}
+
+/* ---------------------------------- */
+/* --- Timeline mutation --- */
+
+.timeline-mutation {
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 2% auto;
+    padding: 5px;
+}
+
+div > h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container:nth-of-type(2n + 1) {
+    background: linear-gradient(rgb(136, 219, 136),rgb(104, 177, 86));
+}
+
+.container {
+    position: relative;
+    width: 49.5%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(136, 219, 136);
+    color: #fc0505;
+}
+
+.html, .css {
+    color: black
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+small {
+    background-color: lightcyan;
+}
+
+.group-1 {
+    position: absolute;
+    left: 100%;
+    padding: 22px;
+}
+
+.group-2 {
+    position: absolute;
+    right: 100%;
+    padding: 22px;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 0;
+    font-size: 0.63rem;
+}
+
+.progress-bar.html {
+    position: absolute;
+    left: 0;
+    font-size: 0.63rem;
+    background-color: rgb(4, 182, 4);
+    width: 92%;
+}
+
+.progress-bar.css {
+    position: absolute;
+    left: 0;
+    font-size: 0.63rem;
+    background-color: rgb(4, 182, 4);
+    width: 75%;
+}
+
+/* ---------------------------------- */
+/* --- Hidden --- */
+/* 
+section, .timeline-mutation {
+    opacity: 0;
+}
+
+section:hover, .timeline-mutation:hover {
+    opacity: 1;
+}
+ */
