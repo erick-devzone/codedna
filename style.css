@@ -156,7 +156,7 @@ small {
 
 /* ---------------------------------- */
 /* --- Hidden --- */
-/* 
+
 section, .timeline-mutation {
     opacity: 0;
 }
@@ -164,4 +164,4 @@ section, .timeline-mutation {
 section:hover, .timeline-mutation:hover {
     opacity: 1;
 }
- */
+
